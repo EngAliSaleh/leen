@@ -83,6 +83,7 @@ nav .contanier ul li a {
 nav .contanier ul li a:hover {
 
   color: #00C3E1;
+  transition: 0.3s ease-in;
 
 }
 
@@ -236,10 +237,10 @@ section .contanier .about .about-img img {
   border: none;
   font-size: 16px;
   color: #FFF;
-  padding: 8px 16px;
+  padding: 10px 16px !important;
   background-color: #00C3E1;
   border-radius: 6px;
-  margin: 14px;
+  margin-left: -14px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -261,6 +262,7 @@ section .contanier .about .about-img img {
 .card:hover {
   background-color: #301C7B;
   color: #fff;
+  transition: 0.5s ease-in;
 }
 
 .swiper-button-prev,
@@ -268,7 +270,35 @@ section .contanier .about .about-img img {
   color: #301c7b;
 }
 
+/* Start company */
 
+.company {
+  margin-top: 150px;
+  background-color: #F1F1F1;
+  padding: 50px;
+}
+
+.company h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.company p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  font-style: normal;
+  text-align: right;
+  color: #000000;
+  padding: 0 0 0 100px;
+}
+
+.two {
+  width: 160px;
+}
+
+
+/* End company */ 
 /*Start vedio */
 .play-vedio {
   min-height: 100vh;
@@ -429,7 +459,7 @@ footer p {
 }
 
 footer ul li {
-  padding: 15px 0;
+  padding: 15px 0 !important;
 }
 
 footer ul li a:hover {
@@ -439,13 +469,15 @@ footer ul li a:hover {
 footer .contact {
   display: flex;
   gap: 10px;
+  
 
 }
 
 footer .contact a {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
   font-family: zahra-Regular !important;
+  margin-top: 8px;
 }
 
 footer .contact a:hover {
@@ -458,35 +490,16 @@ footer .social img {
   padding: 5px;
 }
 
-
-/* swiper */
-
-.company {
-  margin-top: 150px;
-  background-color: #F1F1F1;
-  padding: 50px;
+footer h5 {
+  text-align: center !important;
+  font-family: zahra-Regular;
+  font-size: 18px;
 }
 
-.company h1 {
-  font-size: 70px;
-  font-weight: bold;
-}
 
-.company p {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 30px;
-  font-style: normal;
-  text-align: right;
-  color: #000000;
-  padding: 0 0 0 100px;
-}
 
-.two {
-  width: 160px;
-}
 
-/* com */
+
 
 /* Swiper */
 section#swiper .swiper {
