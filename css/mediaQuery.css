@@ -82,6 +82,9 @@ section#swiper .swiper-slide .left img {
     text-align: center;
     margin-right: auto;
   }
+  section#swiper .swiper-slide a {
+    opacity: 0;
+  }
 }
 @media (max-width:991px) {
     #about {
