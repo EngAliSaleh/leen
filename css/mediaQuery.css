@@ -156,6 +156,10 @@ p.t-ex {
 .play-vedio .container .bg-vedio {
   height: 25vh !important;
 }
+.play-vedio {
+  min-height: 60vh !important;
+  padding: 80px 0 !important;
+}
 }
 
 @media (max-width: 991px) {
