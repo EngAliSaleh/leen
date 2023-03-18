@@ -7,13 +7,28 @@
 
 /* Fonts */
 @font-face {
-  font-family: zahra-Regular;
-  src: url(../fonts/18618-zahra.arabic.otf);
+  font-family: TextArabic-Thin;
+  src: url(../fonts/PFDinTextArabic-Thin.ttf);
 }
 
 @font-face {
-  font-family: ZahraArabic-Bold;
-  src: url(../fonts/ArbFONTS-ZahraArabic-Bold.otf);
+  font-family: TextArabic-Light;
+  src: url(../fonts/PFDinTextArabic-Light.ttf);
+}
+
+@font-face {
+  font-family: TextArabic-Regular;
+  src: url(../fonts/PFDinTextArabic-Regular.ttf);
+}
+
+@font-face {
+  font-family: TextArabic-Medium;
+  src: url(../fonts/PFDinTextArabic-Medium.ttf);
+}
+
+@font-face {
+  font-family: TextArabic-Bold;
+  src: url(../fonts/PFDinTextArabic-Bold.ttf);
 }
 
 .show-ul {
@@ -22,9 +37,8 @@
 
 body,
 html {
-  font-family: zahra-Regular;
-
   overflow-x: hidden !important;
+  font-family: TextArabic-Regular;
 }
 
 
@@ -62,20 +76,23 @@ nav .contanier ul {
 }
 
 nav .contanier ul .btn {
-  padding: 5px 30px;
   border: 1px solid #00C3E1;
   border-radius: 15px;
   color: #00C3E1;
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 18px;
+  font-family: TextArabic-Bold;
+  padding: 0 15px;
+}
+
+nav .contanier ul li {
+  padding: 0 13px;
 }
 
 nav .contanier ul li a {
-  font-family: ZahraArabic-Bold;
+  font-family: TextArabic-Medium;
   font-size: 18px;
   font-weight: 400;
   color: #301c7b;
-  padding: 15px;
   display: flex;
   align-items: center;
 }
@@ -90,18 +107,17 @@ nav .contanier ul li a:hover {
 nav .contanier .login {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  gap: 25px;
 }
 
 nav .contanier .login a {
-  padding: 5px 28px;
+  padding: 3px 20px;
   background-color: #301C7B;
   color: white;
   font-size: 16px;
-  font-weight: 400;
-  border: 1px solid;
-  border-radius: 10px;
+  border-radius: 16px;
+  font-family: TextArabic-Regular;
+
 }
 
 nav .contanier .login i {
@@ -124,12 +140,13 @@ section .contanier .about .about-img img {
   width: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
-  transform: scaleX(-1);
+
 }
 
 #about {
-  padding: 100px;
+  padding: 50px;
 }
+
 
 .about-content {
   padding-bottom: 30px;
@@ -138,16 +155,20 @@ section .contanier .about .about-img img {
 #about .contanier .about .about-content h1 {
   font-size: 80px;
   color: #00C3E1;
+  font-family: TextArabic-Bold;
+
 }
 
 #about .contanier .about .about-content h4 {
   font-size: 50px;
-  font-family: ZahraArabic-Bold;
+  font-family: TextArabic-Bold;
 
 }
 
 #about .contanier .about .about-content p {
-  font-size: 25px;
+  font-size: 18px;
+  font-family: TextArabic-Regular;
+
 }
 
 #about .contanier .about .about-btn {
@@ -161,6 +182,9 @@ section .contanier .about .about-img img {
   color: white;
   border-radius: 12px;
   font-size: 16px;
+  font-family: TextArabic-Regular;
+  font-style: normal;
+
 
 }
 
@@ -170,6 +194,9 @@ section .contanier .about .about-img img {
   color: white;
   border-radius: 12px;
   font-size: 16px;
+  font-family: TextArabic-Regular;
+  font-style: normal;
+
 }
 
 
@@ -189,7 +216,14 @@ section .contanier .about .about-img img {
 
 .card {
   border-radius: 25px;
-  background-color: #FFF;
+  background-color: #f4fbfc;
+  box-shadow: RGBA(0, 0, 0, 0.16);
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: start;
+  height: auto;
+  object-fit: contain;
 }
 
 .image-content,
@@ -222,42 +256,37 @@ section .contanier .about .about-img img {
 }
 
 .name {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   text-align: right !important;
+  font-family: TextArabic-Bold;
+
 
 }
 
 .description {
   font-size: 16px;
   text-align: right !important;
+  font-family: TextArabic-Regular;
 }
 
 .button {
   border: none;
-  font-size: 16px;
+  font-size: 12px;
   color: #FFF;
-  padding: 10px 16px !important;
+  padding: 10px 20px !important;
   background-color: #00C3E1;
-  border-radius: 6px;
+  border-radius: 10px;
   margin-left: -14px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: TextArabic-Regular;
 }
 
 .button:hover {
   background: #265DF2;
 }
 
-.card {
-  border: none;
-  padding: 20px;
-  color: #000;
-  border-radius: 30px;
-  text-align: start;
-  box-shadow: rgba(139, 139, 143, 0.2) 0px 7px 29px 0px;
-
-}
 
 .card:hover {
   background-color: #301C7B;
@@ -279,34 +308,42 @@ section .contanier .about .about-img img {
 }
 
 .company h1 {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 80px;
+  font-family: TextArabic-Bold;
 }
 
 .company p {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 25px;
+  font-family: TextArabic-Regular;
 }
 
 
-.content-training{
-display: block;
-text-align: center;
-margin: auto;
+.content-training {
+  display: block;
+  text-align: center;
+  line-height: 5px;
+
 }
-.content-training .title-training{
-  padding-top: 10px ;
- }
- .content-training img{
+
+.content-training img {
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
-.content-training p{
-  font-size: 13px;
+
+.content-training h1 {
+  font-size: 16px;
+  font-family: TextArabic-Regular;
 }
- 
-/* End company */ 
+
+.content-training p {
+  font-size: 12px;
+  font-family: TextArabic-Light;
+  margin-bottom: 10px;
+
+}
+
+/* End company */
 /*Start vedio */
 .play-vedio {
   min-height: 100vh;
@@ -328,7 +365,7 @@ margin: auto;
 }
 
 .play-vedio .container .main-vedio .vedio {
-  width: 90%;
+  width: 95%;
   position: absolute;
   top: 20px;
   right: 50%;
@@ -345,16 +382,43 @@ margin: auto;
 p.t-ex {
   text-align: center !important;
   font-size: 25px;
-  padding: 15px 0;
-  
+  padding: 30px 0;
+  font-family: TextArabic-Regular;
+
 }
 
 /* Start team */
 .team {
-  padding: 100px 0;
+  margin-top: 100px;
   background-color: #f2f2f2;
-  margin-top: 50px;
+
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #00C3E1;
+}
+
+.team p.title-team {
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 0;
+  font-family: TextArabic-Bold;
+  font-weight: bold;
+}
+
+.title-teamm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line {
+  border-bottom: 3px solid #000;
+  width: 30%;
+}
+
+
 
 .team p.title-team {
   font-weight: 700;
@@ -369,26 +433,10 @@ p.t-ex {
   justify-content: space-between;
 }
 
-.line {
-  border-bottom: 3px solid #000;
-  width: 30%;
-}
-
-.team {
-  padding: 100px 0;
-}
-
-.team p.title-team {
-  font-weight: 700;
-  font-size: 35px;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.title-teamm {
+.teamSwiper .team {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
 
 .line {
@@ -396,9 +444,8 @@ p.t-ex {
   width: 30%;
 }
 
-/*ُStart team */
 .image-slide {
-  height: 350px;
+  height: 20px;
   width: 100%;
 
 }
@@ -417,7 +464,7 @@ img.image-slide {
 
 /*start  contact */
 .contact .container {
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .contact .container p {
@@ -425,26 +472,29 @@ img.image-slide {
 }
 
 .contact .container p:nth-child(1) {
-  font-weight: 700;
+  font-family: TextArabic-Bold;
   font-size: 36px;
 
 }
 
 .contact .container p:nth-child(2) {
-  font-size: 25px;
+  font-size: 30px;
+  word-spacing: 8px;
+  font-family: TextArabic-Regular;
 }
 
 .contact .container a.contact-wats {
   width: 200px;
-  padding: 15px;
+  padding: 10px 0;
   background-color: #1BD741;
-  border-radius: 30px;
+  border-radius: 16px;
   color: #fff;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  font-size: 18px;
 }
 
 /* Start Footer */
@@ -453,23 +503,27 @@ footer {
   background-color: #301C7B;
   padding: 30px 0;
   color: #fff;
+  font-family: TextArabic-Regular;
 }
 
 footer .one {
   width: 140px;
 }
 
+footer h6 {
+  font-size: 16px;
+  line-height: 23px;
+}
+
 footer a {
   color: #fff;
-  font-size: 12px;
-  font-weight: normal;
-
-
+  font-size: 16px;
+  font-family: TextArabic-Light;
 }
 
 footer p {
- 
-  font-size: 30px;
+  font-size: 25px;
+  font-family: TextArabic-Bold;
 }
 
 footer ul li {
@@ -483,15 +537,15 @@ footer ul li a:hover {
 
 footer .contact {
   display: flex;
-  gap: 5px;
-  
+  gap: 20px;
+
 
 }
 
 footer .contact a {
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 200;
-  font-family: zahra-Regular !important;
+  font-family: TextArabic-Thin;
   margin-top: 8px;
 }
 
@@ -510,10 +564,13 @@ footer h5 {
   font-family: zahra-Regular;
   font-size: 18px;
 }
+
 footer .time span {
   font-weight: 200;
   font-family: zahra-Regular !important;
+
 }
+
 
 
 
@@ -559,14 +616,17 @@ section#swiper {
 }
 
 section#swiper .title {
-  font-size: 50px;
+  font-size: 40px;
   text-align: right;
+  font-family: TextArabic-Bold;
 }
 
 section#swiper .details {
-  font-size: 15px;
+  font-size: 14px;
   text-align: right;
   margin-bottom: 20px;
+  width: 70%;
+  font-family: TextArabic-Regular;
 }
 
 section#swiper .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -626,10 +686,10 @@ section#swiper .swiper-slide .left {
 
 section#swiper .swiper-slide .left img {
   object-fit: contain;
-  width: 260px;
+  width: 200px;
   position: relative;
-  top: 30px;
-  left: 50px;
+  top: 53px;
+  left: 111px;
   text-align: center;
   margin-right: auto;
 }
@@ -647,4 +707,10 @@ section#swiper .swiper-slide div:nth-child(1) {
 section#swiper .swiper-slide {
   display: flex;
   align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  background-color: #00C3E1;
 }
